@@ -1,0 +1,258 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles2.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<img class="logo-large" src="logo.png">
+			
+		</header>
+
+		<section class="content-section container">
+			<h1 class="intro">New movies from 2021 to watch right now!</h1>
+			
+			<ul>
+				<li class="list active" data-filter="all">All</li>
+				<li class="list" data-filter="drama">Drama</li>
+				<li class="list" data-filter="documentary">Documentary</li>
+				<li class="list" data-filter="action">Action</li>
+			</ul>	
+
+
+			<div class="divpic drama"> 
+                        <a href="page3_details.html" class="link">
+				<img class="pictures" id="poster1" src="1.png">
+					<div id="title1" class="description">76 Days</div>
+			</div>
+
+			<div class="divpic drama"> 
+				<img class="pictures" id="poster1" src="2.png">
+					<div id="title2" class="description">Drive My Car</div>
+			</div>
+
+			<div class="divpic drama"> 
+				<img class="pictures" id="poster1" src="3.png">
+					<div id="title3" class="description">Quo Vadis, Aida?</div>
+			</div>
+
+			<div class="divpic drama"> 
+				<img class="pictures" id="poster1" src="4.png">
+					<div id="title4" class="description">Slalom</div>
+			</div>
+
+			<div class="divpic drama"> 
+				<img class="pictures" id="poster1" src="5.png">
+					<div id="title5" class="description">The Worst Person in the World</div>
+			</div>
+
+			<div class="divpic drama"> 
+				<img class="pictures" id="poster1" src="6.png">
+					<div id="title6" class="description">Luzzu</div>
+			</div>
+
+			<div class="divpic documentary"> 
+				<img class="pictures" id="poster1" src="7.png">
+					<div id="title7" class="description">Sabaya</div>
+			</div>
+
+			<div class="divpic documentary"> 
+				<img class="pictures" id="poster1" src="8.png">
+					<div id="title8" class="description">Mayor</div>
+			</div>
+
+			<div class="divpic drama"> 
+				<img class="pictures" id="poster1" src="9.png">
+					<div id="title9" class="description">Paper Spiders</div>
+			</div>
+
+			<div class="divpic documentary"> 
+				<img class="pictures" id="poster1" src="10.png">
+					<div id="title10" class="description">Changing the Game</div>
+			</div>
+
+			<div class="divpic action"> 
+				<img class="pictures" id="poster1" src="11.jpg">
+					<div id="title11" class="description">Copshop</div>
+			</div>
+
+			<div class="divpic documentary"> 
+				<img class="pictures" id="poster1" src="12.png">
+					<div id="title12" class="description">Summer of Soul</div>
+			</div>
+
+
+		
+			
+		</section>
+
+		<script>
+       
+        var al1=document.querySelector("#title1");
+        var al2=document.querySelector("#title2");
+        var al3=document.querySelector("#title3");
+        var al4=document.querySelector("#title4");
+        var al5=document.querySelector("#title5");
+        var al6=document.querySelector("#title6");
+        var al7=document.querySelector("#title7");
+        var al8=document.querySelector("#title8");
+        var al9=document.querySelector("#title9");
+        var al10=document.querySelector("#title10");
+        var al11=document.querySelector("#title11");
+        var al12=document.querySelector("#title12");
+        var count=0;
+        
+
+        al1.addEventListener("mouseover", changeText1);
+        al2.addEventListener("mouseover", changeText2);
+        al3.addEventListener("mouseover", changeText3);
+		al4.addEventListener("mouseover", changeText4);
+        al5.addEventListener("mouseover", changeText5);
+        al6.addEventListener("mouseover", changeText6);
+        al7.addEventListener("mouseover", changeText7);
+        al8.addEventListener("mouseover", changeText8);
+        al9.addEventListener("mouseover", changeText9);
+		al10.addEventListener("mouseover", changeText10);
+        al11.addEventListener("mouseover", changeText11);
+        al12.addEventListener("mouseover", changeText12);
+
+        al1.addEventListener("mouseout", reverseText1);
+        al2.addEventListener("mouseout", reverseText2);
+        al3.addEventListener("mouseout", reverseText3);
+        al4.addEventListener("mouseout", reverseText4);
+        al5.addEventListener("mouseout", reverseText5);
+        al6.addEventListener("mouseout", reverseText6);
+        al7.addEventListener("mouseout", reverseText7);
+        al8.addEventListener("mouseout", reverseText8);
+        al9.addEventListener("mouseout", reverseText9);
+        al10.addEventListener("mouseout", reverseText10);
+        al11.addEventListener("mouseout", reverseText11);
+        al12.addEventListener("mouseout", reverseText12);
+       
+
+
+        
+
+      function changeText1(){
+            al1.textContent="8.5/10";
+        }
+  
+      function reverseText1(){
+            al1.textContent="76 Days";
+        }
+
+      function changeText2 (){
+            al2.textContent="8.2/10";
+        }
+      function reverseText2 () {
+            al2.textContent="Drive My Car";
+        }
+
+      function changeText3 (){
+            al3.textContent="8.8/10";
+        }
+
+      function reverseText3() { 
+            al3.textContent="Quo Vadis, Aida?";
+        }
+
+       function changeText4(){
+            al4.textContent="7.8/10";
+        }
+  
+      function reverseText4(){
+            al4.textContent="Slalom";
+        }
+
+      function changeText5 (){
+            al5.textContent="7.7/10";
+        }
+      function reverseText5 () {
+            al5.textContent="The Worst Person in the World";
+        }
+
+      function changeText6 (){
+            al6.textContent="7.1/10";
+        }
+
+      function reverseText6() { 
+            al6.textContent="Luzzu";
+        }
+
+
+      function changeText7(){
+            al7.textContent="7.2/10";
+        }
+  
+      function reverseText7(){
+            al7.textContent="Sabaya";
+        }
+
+      function changeText8 (){
+            al8.textContent="8.8/10";
+        }
+      function reverseText8 () {
+            al8.textContent="Mayor";
+        }
+
+      function changeText9 (){
+            al9.textContent="9.4/10";
+        }
+
+      function reverseText9() { 
+            al9.textContent="Paper Spiders";
+        }
+
+        function changeText10(){
+            al10.textContent="7.1/10";
+        }
+  
+      function reverseText10(){
+            al10.textContent="Changing the Game";
+        }
+
+      function changeText11 (){
+            al11.textContent="6.8/10";
+        }
+      function reverseText11 () {
+            al11.textContent="Copshop";
+        }
+
+      function changeText12 (){
+            al12.textContent="9.8/10";
+        }
+
+      function reverseText12() { 
+            al12.textContent="Summer of Soul";
+        }
+
+
+
+
+
+
+     </script>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.list').click(function(){
+  			const value = $(this).attr('data-filter');
+  			if (value == 'all'){
+  				$('.divpic').show('1000');
+  			}
+  			else{
+  				$('.divpic').not('.'+value).hide('1000');
+  				$('.divpic').filter('.'+value).show('1000');
+  			}
+  		})
+  		// add active class on selected item
+
+  		$('.list').click(function(){
+  			$(this).addClass('active').siblings().removeClass('active');
+  		})
+  	})
+  </script>

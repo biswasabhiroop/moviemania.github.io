@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles3.css">
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="HTML">
+        <title> Movie Mania Details </title>
+    </head>
+
+
+
+    <body>
+
+    <div class="logo">
+            <img src="logo.png" width="8%">
+    </div>
+
+    <div id="page3">
+            <img src="Paper_Spiders.png" class="poster" >
+        <div id="details">
+            <h1>Paper Spiders</h1>
+            <p>Paper spiders is a bittersweet story about coming of age in the shadow of mental illness. The film is a journey from comedy to tragedy — much like the life of its main characters, and the personal lives of my co-writer and wife Natalie, her mother, and myself, over the past decade. Natalie’s mother passed away four years ago, but in a way we lost her years before. She was a loving mother, a sweet and funny woman with a quirky sense of humor -and a victim of persecutory delusional disorder. Like others afflicted with paranoia, she was extremely resistant to treatment. As a therapist, Natalie explored all strategies to help her mom, but to no avail. Challenging her reality provoked hostility, and threatened their loving relationship. <br> <br>
+
+            In telling a story inspired by our experiences, we wish to shed light on the unexplored subject of delusional disorder, and the pain mental illness inflicts on individuals and family members. The tonal shift from comedy to tragedy reflects the manner in which quirky neurosis can develop into full-fledged psychosis, and a loving relationship can deteriorate into catastrophe and heartbreak. The film features outstanding performances from Lili Taylor and Stefania LaVie Owen as well as our terrific supporting cast, including Peyton List, Ian Nelson, David Rasche, Max Casella, Michael Cyril Creighton and Tom Papa. It was a true labor of love for the cast and crew, for our wonderful producers Anne Clements and Ash Christian, and the extremely supportive community of Syracuse NY where the film was shot.</p>
+
+            <br><br>
+
+            <h4>Rating:</h4>
+
+            <input type="number" id="Rating"> 
+            <p id="p2">(Rate the Movie out of 5)</p>
+            <br>
+            <input type="button" value="SUBMIT" id="submitButton" disabled="true">
+
+        </div>
+
+</div>
+
+
+
+     <script>
+
+        var rating = document.querySelector("#Rating");
+        rating.addEventListener("input", enableButton);
+        var submitButton=document.querySelector("#submitButton");
+        submitButton.addEventListener("click", checkRating);
+
+    function enableButton(){
+        console.log("enableButton")
+        document.getElementById('submitButton').removeAttribute('disabled')
+    }
+     function checkRating(){
+        console.log("checkRating")
+        amount = document.getElementById("Rating").value;
+        console.log(amount);
+
+
+        if(amount < 1 || amount > 5){
+            alert("Enter a value within 1 to 5");
+        }
+        else { 
+            alert("Rating Submitted!");
+        } 
+}
+     </script>
+
+
+
+    </body>
+</html>
+

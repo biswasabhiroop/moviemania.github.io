@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <div class="logo">
+    <img src="whitelogo.gif" alt="logo" id="logo">
+    </div>
+
+    <div class="login-header">
+    <h1>Welcome! Please enter your sign-in details.</h1>
+    </div>  
+
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="button" value="Login" id="login-form-submit">
+    </form>
+  
+
+  <script>
+
+      var loginButton = document.getElementById("login-form-submit");
+      loginButton.addEventListener("click", dothiswhenclicked);
+      
+      function dothiswhenclicked (){
+        var username = document.getElementById("username-field").value;
+        var password = document.getElementById("password-field").value;
+        if (username === "user" && password === "2021"){
+                alert ("Welcome!");
+                window.location.href = "main_page.html";
+            }
+            else {
+                alert ("Invalid username and/or password");
+            }
+      }
+
+  </script>
+
+</body>
+
+</html>
